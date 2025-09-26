@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "outDir": "dist",
+    "rootDir": ".",        // <--- changed from "server"
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Node"
+  },
+  "include": ["server/**/*", "shared/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
