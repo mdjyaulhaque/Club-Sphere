@@ -90,7 +90,7 @@ app.use((req, res, next) => {
   // ----------------------------
   // Start server
   // ----------------------------
-  const PORT = parseInt(process.env.PORT || "5000", 10);
+  const PORT = parseInt(process.env.PORT || "5002", 10);
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running at http://0.0.0.0:${PORT}`);
   });
